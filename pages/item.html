@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Item</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img
+          class="funkoshop-logo"
+          src="img/branding/logo_light_horizontal.svg"
+          alt="funkoshop-logo"
+        />
+        <nav class="nav-header">
+          <svg
+            class="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-dasharray="24"
+              stroke-dashoffset="24"
+              stroke-linecap="round"
+              stroke-width="2"
+            >
+              <path d="M5 5H19">
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  dur="0.2s"
+                  values="24;0"
+                />
+              </path>
+              <path d="M5 12H19">
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  begin="0.2s"
+                  dur="0.2s"
+                  values="24;0"
+                />
+              </path>
+              <path d="M5 19H19">
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  begin="0.4s"
+                  dur="0.2s"
+                  values="24;0"
+                />
+              </path>
+            </g>
+          </svg>
+          <ul class="nav-list">
+            <li>
+              <a class="nvha" href="shop.html">
+                SHOP
+                <i class="chevron-shop">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                  >
+                    <g transform="rotate(180 14 14)">
+                      <path
+                        fill="currentColor"
+                        d="M23.707 18.707a1 1 0 0 1-1.414 0L14 10.414l-8.293 8.293a1 1 0 0 1-1.414-1.414l9-9a1 1 0 0 1 1.414 0l9 9a1 1 0 0 1 0 1.414Z"
+                      />
+                    </g>
+                  </svg>
+                </i>
+              </a>
+            </li>
+            <li><a class="nvha" href="contacto.html">CONTACTO</a></li>
+            <li><a class="nvha" href="login.html">LOGIN</a></li>
+            <li>
+              <a class="nvha" href="carrito.html">
+                <img
+                  class="cart-icon"
+                  src="img/icons/cart-icon.svg"
+                  alt="cart"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-itemSelected">
+        <div class="img-itemSelected"></div>
+        <div class="info-itemSelected">
+          <p class="itemcateg">STAR WARS</p>
+          <p class="itemName">BABY YODA</p>
+        </div>
+      </div>
+      <div class="lanzamientos">
+        <h4>PRODUCTOS RELACIONADOS</h4>
+        <div class="lanz-container glide">
+          <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides"></div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button
+                class="glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+              >
+                <iconify-icon icon="tabler:chevron-left"></iconify-icon>
+              </button>
+              <button
+                class="glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+              >
+                <iconify-icon icon="tabler:chevron-right"></iconify-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <nav id="nav-footer">
+        <ul class="nav-f-u">
+          <li class="nav-f-i"><a class="nvha" href="shop.html">SHOP</a></li>
+          <li class="nav-f-i">
+            <a class="nvha" href="ingresar.html">INGRESAR</a>
+          </li>
+          <li class="nav-f-i">
+            <a class="nvha" href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="img/branding/isotype.svg" alt="funko-logo" class="isotype" />
+      <div class="copyrightdiv">
+        <p class="copyright">All rights reserved 2023 - Funkoshop &copy;</p>
+      </div>
+    </footer>
+    <script src="./script/generarItems.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  </body>
+</html>
